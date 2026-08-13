@@ -48,7 +48,7 @@ Autoware-ML runs well in a Docker container with GPU support. We encourage you t
     # Install pip
     sudo apt -y update
     sudo apt -y install python3-pip
-
+    ## I think it is better that we specify the python version that is required, I understand that it is already addressed in the pyproject.toml, it would be better to mention it again in the document
     # Install Ansible (if not already installed)
     sudo python3 -m pip install ansible==10.7.0
 
@@ -59,7 +59,7 @@ Autoware-ML runs well in a Docker container with GPU support. We encourage you t
     # Pick one of the two playbooks below depending on your workflow:
     # Docker-based development host
     ansible-playbook ansible/playbooks/setup_docker_host.yaml -K
-
+    ## this shall be put into another coding box
     # Local pixi development host
     ansible-playbook ansible/playbooks/setup_local_host.yaml -K
     ```
